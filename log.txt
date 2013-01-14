@@ -1,0 +1,856 @@
+stateId=resume&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35&activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&actor=null&moodle%5Fmod=scorm
+POST
+Array
+(
+    [method] => GET
+    [stateId] => resume
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [actor] => null
+    [moodle_mod] => scorm
+)
+moodle%5Fmod%5Fid=6&content=%7B%22verb%22%3A%22experienced%22%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%225jIOVMY3lI7%22%7D%7D&moodle%5Fmod=scorm&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&statementId=a3c6add4%2D3eaa%2D4e28%2Dac44%2D073eeff82a90
+POST
+Array
+(
+    [method] => PUT
+    [moodle_mod_id] => 6
+    [content] => {\"verb\":\"experienced\",\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"actor\":null,\"object\":{\"id\":\"5jIOVMY3lI7\"}}
+    [moodle_mod] => scorm
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [statementId] => a3c6add4-3eaa-4e28-ac44-073eeff82a90
+)
+moodle%5Fmod%5Fid=6&content=%7B%22verb%22%3A%22attempted%22%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&moodle%5Fmod=scorm&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&statementId=449b1639%2Dfb57%2D4153%2Db09a%2Df8acdbe46227
+POST
+Array
+(
+    [method] => PUT
+    [moodle_mod_id] => 6
+    [content] => {\"verb\":\"attempted\",\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"actor\":null,\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [moodle_mod] => scorm
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [statementId] => 449b1639-fb57-4153-b09a-f8acdbe46227
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&Content%2DType=application%2Fjson&moodle%5Fmod%5Fid=6&stateId=resume&registration=4e732ced3463d06de0ca9a15b6153677&actor=null&moodle%5Fmod=scorm&revision=1
+POST
+Array
+(
+    [method] => GET
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [Content-Type] => application/json
+    [moodle_mod_id] => 6
+    [stateId] => resume
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [actor] => null
+    [moodle_mod] => scorm
+    [revision] => 1
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&content=%7B%22verb%22%3A%22experienced%22%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%225jIOVMY3lI7%22%7D%7D&statementId=9178d339%2D0edb%2D45ca%2D8644%2Dde12cb9b1dca&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1
+POST
+Array
+(
+    [method] => PUT
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [content] => {\"verb\":\"experienced\",\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"actor\":null,\"object\":{\"id\":\"5jIOVMY3lI7\"}}
+    [statementId] => 9178d339-0edb-45ca-8644-de12cb9b1dca
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&content=%7B%22verb%22%3A%22attempted%22%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&statementId=f8d2a762%2Dcff4%2D4139%2Dba60%2D52f201309242&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1
+POST
+Array
+(
+    [method] => PUT
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [content] => {\"verb\":\"attempted\",\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"actor\":null,\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [statementId] => f8d2a762-cff4-4139-ba60-52f201309242
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+)
+moodle%5Fmod%5Fid=6&content=%7B%22verb%22%3A%22attempted%22%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&moodle%5Fmod=scorm&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&statementId=449b1639%2Dfb57%2D4153%2Db09a%2Df8acdbe46227
+POST
+Array
+(
+    [method] => PUT
+    [moodle_mod_id] => 6
+    [content] => {\"verb\":\"attempted\",\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"actor\":null,\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [moodle_mod] => scorm
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [statementId] => 449b1639-fb57-4153-b09a-f8acdbe46227
+)
+moodle%5Fmod%5Fid=6&content=%7B%22verb%22%3A%22attempted%22%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&moodle%5Fmod=scorm&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&statementId=449b1639%2Dfb57%2D4153%2Db09a%2Df8acdbe46227
+POST
+Array
+(
+    [method] => PUT
+    [moodle_mod_id] => 6
+    [content] => {\"verb\":\"attempted\",\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"actor\":null,\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [moodle_mod] => scorm
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [statementId] => 449b1639-fb57-4153-b09a-f8acdbe46227
+)
+moodle%5Fmod%5Fid=6&content=%7B%22verb%22%3A%22attempted%22%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&moodle%5Fmod=scorm&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&statementId=449b1639%2Dfb57%2D4153%2Db09a%2Df8acdbe46227
+POST
+Array
+(
+    [method] => PUT
+    [moodle_mod_id] => 6
+    [content] => {\"verb\":\"attempted\",\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"actor\":null,\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [moodle_mod] => scorm
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [statementId] => 449b1639-fb57-4153-b09a-f8acdbe46227
+)
+moodle%5Fmod%5Fid=6&content=%7B%22verb%22%3A%22attempted%22%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&moodle%5Fmod=scorm&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&statementId=449b1639%2Dfb57%2D4153%2Db09a%2Df8acdbe46227
+POST
+Array
+(
+    [method] => PUT
+    [moodle_mod_id] => 6
+    [content] => {\"verb\":\"attempted\",\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"actor\":null,\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [moodle_mod] => scorm
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [statementId] => 449b1639-fb57-4153-b09a-f8acdbe46227
+)
+registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&Authorization=80379aaee7c6794ad3b60b129eeb7e35&activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1&actor=null&stateId=resume
+POST
+Array
+(
+    [method] => GET
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+    [actor] => null
+    [stateId] => resume
+)
+registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&content=%7B%22verb%22%3A%22experienced%22%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%225jIOVMY3lI7%22%7D%7D&Authorization=80379aaee7c6794ad3b60b129eeb7e35&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1&statementId=d258e75e%2Dc59c%2D4bbc%2D851e%2D06b5d2ce0c8e
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [content] => {\"verb\":\"experienced\",\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"actor\":null,\"object\":{\"id\":\"5jIOVMY3lI7\"}}
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+    [statementId] => d258e75e-c59c-4bbc-851e-06b5d2ce0c8e
+)
+registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&content=%7B%22verb%22%3A%22attempted%22%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%2C%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%7D%7D&Authorization=80379aaee7c6794ad3b60b129eeb7e35&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1&statementId=fae20a48%2D5561%2D41e6%2D8d53%2D8f2925cf1c22
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [content] => {\"verb\":\"attempted\",\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"actor\":null,\"object\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\",\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"}}}
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+    [statementId] => fae20a48-5561-41e6-8d53-8f2925cf1c22
+)
+moodle%5Fmod%5Fid=6&content=%7B%22verb%22%3A%22attempted%22%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&moodle%5Fmod=scorm&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&statementId=449b1639%2Dfb57%2D4153%2Db09a%2Df8acdbe46227
+POST
+Array
+(
+    [method] => PUT
+    [moodle_mod_id] => 6
+    [content] => {\"verb\":\"attempted\",\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"actor\":null,\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [moodle_mod] => scorm
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [statementId] => 449b1639-fb57-4153-b09a-f8acdbe46227
+)
+moodle%5Fmod%5Fid=6&content=%7B%22verb%22%3A%22attempted%22%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&moodle%5Fmod=scorm&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&statementId=449b1639%2Dfb57%2D4153%2Db09a%2Df8acdbe46227
+POST
+Array
+(
+    [method] => PUT
+    [moodle_mod_id] => 6
+    [content] => {\"verb\":\"attempted\",\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"actor\":null,\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [moodle_mod] => scorm
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [statementId] => 449b1639-fb57-4153-b09a-f8acdbe46227
+)
+moodle%5Fmod%5Fid=6&content=%7B%22verb%22%3A%22attempted%22%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&moodle%5Fmod=scorm&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&statementId=449b1639%2Dfb57%2D4153%2Db09a%2Df8acdbe46227
+POST
+Array
+(
+    [method] => PUT
+    [moodle_mod_id] => 6
+    [content] => {\"verb\":\"attempted\",\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"actor\":null,\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [moodle_mod] => scorm
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [statementId] => 449b1639-fb57-4153-b09a-f8acdbe46227
+)
+moodle%5Fmod%5Fid=6&content=%7B%22verb%22%3A%22attempted%22%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&moodle%5Fmod=scorm&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&statementId=449b1639%2Dfb57%2D4153%2Db09a%2Df8acdbe46227
+POST
+Array
+(
+    [method] => PUT
+    [moodle_mod_id] => 6
+    [content] => {\"verb\":\"attempted\",\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"actor\":null,\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [moodle_mod] => scorm
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [statementId] => 449b1639-fb57-4153-b09a-f8acdbe46227
+)
+moodle%5Fmod%5Fid=6&content=%7B%22verb%22%3A%22attempted%22%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&moodle%5Fmod=scorm&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&statementId=449b1639%2Dfb57%2D4153%2Db09a%2Df8acdbe46227
+POST
+Array
+(
+    [method] => PUT
+    [moodle_mod_id] => 6
+    [content] => {\"verb\":\"attempted\",\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"actor\":null,\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [moodle_mod] => scorm
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [statementId] => 449b1639-fb57-4153-b09a-f8acdbe46227
+)
+moodle%5Fmod%5Fid=6&content=%7B%22verb%22%3A%22attempted%22%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&moodle%5Fmod=scorm&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&statementId=449b1639%2Dfb57%2D4153%2Db09a%2Df8acdbe46227
+POST
+Array
+(
+    [method] => PUT
+    [moodle_mod_id] => 6
+    [content] => {\"verb\":\"attempted\",\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"actor\":null,\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [moodle_mod] => scorm
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [statementId] => 449b1639-fb57-4153-b09a-f8acdbe46227
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1&stateId=resume&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&actor=null
+POST
+Array
+(
+    [method] => GET
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+    [stateId] => resume
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [actor] => null
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1&statementId=4f43759e%2D9e1e%2D45be%2Da5b5%2D92446c81fc8c&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&content=%7B%22verb%22%3A%22experienced%22%2C%22actor%22%3Anull%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22object%22%3A%7B%22id%22%3A%225jIOVMY3lI7%22%7D%7D
+POST
+Array
+(
+    [method] => PUT
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+    [statementId] => 4f43759e-9e1e-45be-a5b5-92446c81fc8c
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [content] => {\"verb\":\"experienced\",\"actor\":null,\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"object\":{\"id\":\"5jIOVMY3lI7\"}}
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1&statementId=9b1d7605%2D926c%2D4e02%2Da620%2D778190dd9f18&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&content=%7B%22verb%22%3A%22attempted%22%2C%22actor%22%3Anull%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D
+POST
+Array
+(
+    [method] => PUT
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+    [statementId] => 9b1d7605-926c-4e02-a620-778190dd9f18
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [content] => {\"verb\":\"attempted\",\"actor\":null,\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1&statementId=611090d3%2Da69c%2D4053%2D8fab%2D650076d9664a&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&content=%7B%22result%22%3A%7B%22score%22%3A%7B%22raw%22%3A10%7D%2C%22success%22%3Atrue%2C%22response%22%3A%22choice%5F5uToT0BW3SC%22%7D%2C%22verb%22%3A%22answered%22%2C%22actor%22%3Anull%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%225cv16q9HG8Q%22%7D%7D%7D%2C%22object%22%3A%7B%22id%22%3A%225jIOVMY3lI7%2Ea05ae619%2Dd0e3%2D4755%2D9cf0%2Dc944c8861581%22%7D%7D
+POST
+Array
+(
+    [method] => PUT
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+    [statementId] => 611090d3-a69c-4053-8fab-650076d9664a
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [content] => {\"result\":{\"score\":{\"raw\":10},\"success\":true,\"response\":\"choice_5uToT0BW3SC\"},\"verb\":\"answered\",\"actor\":null,\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"5cv16q9HG8Q\"}}},\"object\":{\"id\":\"5jIOVMY3lI7.a05ae619-d0e3-4755-9cf0-c944c8861581\"}}
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1&statementId=73bfd7be%2Dddf7%2D43a0%2D8cd2%2D552bf8f2a776&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&content=%7B%22verb%22%3A%22experienced%22%2C%22actor%22%3Anull%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22object%22%3A%7B%22id%22%3A%226Uo7vTiQ6UT%22%7D%7D
+POST
+Array
+(
+    [method] => PUT
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+    [statementId] => 73bfd7be-ddf7-43a0-8cd2-552bf8f2a776
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [content] => {\"verb\":\"experienced\",\"actor\":null,\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"object\":{\"id\":\"6Uo7vTiQ6UT\"}}
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&moodle%5Fmod%5Fid=6&activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&Content%2DType=application%2Fjson&revision=1&stateId=resume&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&actor=null&content=26244050ji1001111a010110111100%7E2D1%7E2s1a9101001a1a3XW0K6Ai0000cQi00l1%5F%2400m1pTi3000G0%5F%2400H0118%5Fdefaultpn02Hdfe720118%5Fdefault000000100000000
+POST
+Array
+(
+    [method] => PUT
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [moodle_mod_id] => 6
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [Content-Type] => application/json
+    [revision] => 1
+    [stateId] => resume
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [actor] => null
+    [content] => 26244050ji1001111a010110111100~2D1~2s1a9101001a1a3XW0K6Ai0000cQi00l1_$00m1pTi3000G0_$00H0118_defaultpn02Hdfe720118_default000000100000000
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1&statementId=796d4732%2D51cc%2D40c4%2D9e35%2D69752611e6cb&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&content=%7B%22result%22%3A%7B%22score%22%3A%7B%22raw%22%3A10%7D%2C%22success%22%3Atrue%2C%22response%22%3A%22choice%5F5hmqro1qC5O%5B%2C%5Dchoice%5F6biJYtcdOoK%22%7D%2C%22verb%22%3A%22answered%22%2C%22actor%22%3Anull%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%225cv16q9HG8Q%22%7D%7D%7D%2C%22object%22%3A%7B%22id%22%3A%226Uo7vTiQ6UT%2E675caf81%2D6862%2D461d%2Db401%2D76a9f043435a%22%7D%7D
+POST
+Array
+(
+    [method] => PUT
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+    [statementId] => 796d4732-51cc-40c4-9e35-69752611e6cb
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [content] => {\"result\":{\"score\":{\"raw\":10},\"success\":true,\"response\":\"choice_5hmqro1qC5O[,]choice_6biJYtcdOoK\"},\"verb\":\"answered\",\"actor\":null,\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"5cv16q9HG8Q\"}}},\"object\":{\"id\":\"6Uo7vTiQ6UT.675caf81-6862-461d-b401-76a9f043435a\"}}
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1&statementId=82cfa685%2Db7bf%2D49cf%2D8f6b%2D610480d23781&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&content=%7B%22verb%22%3A%22experienced%22%2C%22actor%22%3Anull%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22object%22%3A%7B%22id%22%3A%226cRKIhEssyA%22%7D%7D
+POST
+Array
+(
+    [method] => PUT
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+    [statementId] => 82cfa685-b7bf-49cf-8f6b-610480d23781
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [content] => {\"verb\":\"experienced\",\"actor\":null,\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"object\":{\"id\":\"6cRKIhEssyA\"}}
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&moodle%5Fmod%5Fid=6&activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&Content%2DType=application%2Fjson&revision=1&stateId=resume&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&actor=null&content=2946504060on1001211f01011011110121100%7E2z3%7E2s1a9101001a1a3XW0K6Ai0000cQi00l1%5F%2400m1pTi3000G0%5F%2400H0118%5Fdefaultpn02Hdfe720118%5Fdefault00000010%7E2V1a9101001a1a3vG0%7E281jDi300000118%5FdefaultcQi0002%5F%240012pTi3000l1%5F%2400m1118%5FdefaultcQi00G0%5F%2400H0pn02Lbfe720118%5Fdefault00000010000000
+POST
+Array
+(
+    [method] => PUT
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [moodle_mod_id] => 6
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [Content-Type] => application/json
+    [revision] => 1
+    [stateId] => resume
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [actor] => null
+    [content] => 2946504060on1001211f01011011110121100~2z3~2s1a9101001a1a3XW0K6Ai0000cQi00l1_$00m1pTi3000G0_$00H0118_defaultpn02Hdfe720118_default00000010~2V1a9101001a1a3vG0~281jDi300000118_defaultcQi0002_$0012pTi3000l1_$00m1118_defaultcQi00G0_$00H0pn02Lbfe720118_default00000010000000
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1&statementId=416632c9%2D1468%2D4935%2D9e4d%2Dd1e6b5596dfb&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&content=%7B%22result%22%3A%7B%22score%22%3A%7B%22raw%22%3A10%7D%2C%22success%22%3Atrue%2C%22response%22%3A%22earth%22%7D%2C%22verb%22%3A%22answered%22%2C%22actor%22%3Anull%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%225cv16q9HG8Q%22%7D%7D%7D%2C%22object%22%3A%7B%22id%22%3A%226cRKIhEssyA%2Ed7911223%2D2749%2D424f%2Dbee8%2De241f458bff3%22%7D%7D
+POST
+Array
+(
+    [method] => PUT
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+    [statementId] => 416632c9-1468-4935-9e4d-d1e6b5596dfb
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [content] => {\"result\":{\"score\":{\"raw\":10},\"success\":true,\"response\":\"earth\"},\"verb\":\"answered\",\"actor\":null,\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"5cv16q9HG8Q\"}}},\"object\":{\"id\":\"6cRKIhEssyA.d7911223-2749-424f-bee8-e241f458bff3\"}}
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&moodle%5Fmod%5Fid=6&Content%2DType=application%2Fjson&revision=1&statementId=b8cc0237%2Dd991%2D4bfd%2Da3a5%2Da1088b9c04ca&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&content=%7B%22verb%22%3A%22experienced%22%2C%22actor%22%3Anull%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22object%22%3A%7B%22id%22%3A%225cgcNZPuHSe%22%7D%7D
+POST
+Array
+(
+    [method] => PUT
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [moodle_mod_id] => 6
+    [Content-Type] => application/json
+    [revision] => 1
+    [statementId] => b8cc0237-d991-4bfd-a3a5-a1088b9c04ca
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [content] => {\"verb\":\"experienced\",\"actor\":null,\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"object\":{\"id\":\"5cgcNZPuHSe\"}}
+)
+Authorization=80379aaee7c6794ad3b60b129eeb7e35&moodle%5Fmod%5Fid=6&activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&Content%2DType=application%2Fjson&revision=1&stateId=resume&registration=4e732ced3463d06de0ca9a15b6153677&moodle%5Fmod=scorm&actor=null&content=2G5850406070ts1001311k01011011110121101311r2005earth0101010100000000000%7E2y4%7E2s1a9101001a1a3XW0K6Ai0000cQi00l1%5F%2400m1pTi3000G0%5F%2400H0118%5Fdefaultpn02Hdfe720118%5Fdefault00000010%7E2V1a9101001a1a3vG0%7E281jDi300000118%5FdefaultcQi0002%5F%240012pTi3000l1%5F%2400m1118%5FdefaultcQi00G0%5F%2400H0pn02Lbfe720118%5Fdefault00000010%24a9101001a1a3XK0gfSgz0d1%5F%2405earthqo03Jw0fe720118%5Fdefault0000001000000
+POST
+Array
+(
+    [method] => PUT
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [moodle_mod_id] => 6
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [Content-Type] => application/json
+    [revision] => 1
+    [stateId] => resume
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [moodle_mod] => scorm
+    [actor] => null
+    [content] => 2G5850406070ts1001311k01011011110121101311r2005earth0101010100000000000~2y4~2s1a9101001a1a3XW0K6Ai0000cQi00l1_$00m1pTi3000G0_$00H0118_defaultpn02Hdfe720118_default00000010~2V1a9101001a1a3vG0~281jDi300000118_defaultcQi0002_$0012pTi3000l1_$00m1118_defaultcQi00G0_$00H0pn02Lbfe720118_default00000010$a9101001a1a3XK0gfSgz0d1_$05earthqo03Jw0fe720118_default0000001000000
+)
+Content%2DType=application%2Fjson&moodle%5Fmod%5Fid=6&stateId=resume&actor=null&revision=1&moodle%5Fmod=scorm&registration=4e732ced3463d06de0ca9a15b6153677&Authorization=80379aaee7c6794ad3b60b129eeb7e35&activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml
+POST
+Array
+(
+    [method] => GET
+    [Content-Type] => application/json
+    [moodle_mod_id] => 6
+    [stateId] => resume
+    [actor] => null
+    [revision] => 1
+    [moodle_mod] => scorm
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+)
+Content%2DType=application%2Fjson&statementId=9caf53c3%2D022e%2D471b%2Db6eb%2D555336960e19&moodle%5Fmod%5Fid=6&moodle%5Fmod=scorm&revision=1&registration=4e732ced3463d06de0ca9a15b6153677&Authorization=80379aaee7c6794ad3b60b129eeb7e35&content=%7B%22verb%22%3A%22attempted%22%2C%22actor%22%3Anull%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D
+POST
+Array
+(
+    [method] => PUT
+    [Content-Type] => application/json
+    [statementId] => 9caf53c3-022e-471b-b6eb-555336960e19
+    [moodle_mod_id] => 6
+    [moodle_mod] => scorm
+    [revision] => 1
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [content] => {\"verb\":\"attempted\",\"actor\":null,\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+)
+Content%2DType=application%2Fjson&moodle%5Fmod%5Fid=6&stateId=resume&moodle%5Fmod=scorm&revision=1&actor=null&content=2w5870504060j41090d1101010501010r2005earth0101010100000000000%7E2y4%7E2s1a9101001a1a3XW0K6Ai0000cQi00l1%5F%2400m1pTi3000G0%5F%2400H0118%5Fdefaultpn02Hdfe720118%5Fdefault00000010%7E2V1a9101001a1a3vG0%7E281jDi300000118%5FdefaultcQi0002%5F%240012pTi3000l1%5F%2400m1118%5FdefaultcQi00G0%5F%2400H0pn02Lbfe720118%5Fdefault00000010%24a9101001a1a3XK0gfSgz0d1%5F%2405earthqo03Jw0fe720118%5Fdefault0000001000000&registration=4e732ced3463d06de0ca9a15b6153677&Authorization=80379aaee7c6794ad3b60b129eeb7e35&activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml
+POST
+Array
+(
+    [method] => PUT
+    [Content-Type] => application/json
+    [moodle_mod_id] => 6
+    [stateId] => resume
+    [moodle_mod] => scorm
+    [revision] => 1
+    [actor] => null
+    [content] => 2w5870504060j41090d1101010501010r2005earth0101010100000000000~2y4~2s1a9101001a1a3XW0K6Ai0000cQi00l1_$00m1pTi3000G0_$00H0118_defaultpn02Hdfe720118_default00000010~2V1a9101001a1a3vG0~281jDi300000118_defaultcQi0002_$0012pTi3000l1_$00m1118_defaultcQi00G0_$00H0pn02Lbfe720118_default00000010$a9101001a1a3XK0gfSgz0d1_$05earthqo03Jw0fe720118_default0000001000000
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+)
+Content%2DType=application%2Fjson&moodle%5Fmod%5Fid=6&stateId=resume&moodle%5Fmod=scorm&revision=1&actor=null&content=2m58705040609810013110r2005earth0101010100000000000%7E2y4%7E2s1a9101001a1a3XW0K6Ai0000cQi00l1%5F%2400m1pTi3000G0%5F%2400H0118%5Fdefaultpn02Hdfe720118%5Fdefault00000010%7E2V1a9101001a1a3vG0%7E281jDi300000118%5FdefaultcQi0002%5F%240012pTi3000l1%5F%2400m1118%5FdefaultcQi00G0%5F%2400H0pn02Lbfe720118%5Fdefault00000010%24a9101001a1a3XK0gfSgz0d1%5F%2405earthqo03Jw0fe720118%5Fdefault0000001000000&registration=4e732ced3463d06de0ca9a15b6153677&Authorization=80379aaee7c6794ad3b60b129eeb7e35&activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml
+POST
+Array
+(
+    [method] => PUT
+    [Content-Type] => application/json
+    [moodle_mod_id] => 6
+    [stateId] => resume
+    [moodle_mod] => scorm
+    [revision] => 1
+    [actor] => null
+    [content] => 2m58705040609810013110r2005earth0101010100000000000~2y4~2s1a9101001a1a3XW0K6Ai0000cQi00l1_$00m1pTi3000G0_$00H0118_defaultpn02Hdfe720118_default00000010~2V1a9101001a1a3vG0~281jDi300000118_defaultcQi0002_$0012pTi3000l1_$00m1118_defaultcQi00G0_$00H0pn02Lbfe720118_default00000010$a9101001a1a3XK0gfSgz0d1_$05earthqo03Jw0fe720118_default0000001000000
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+)
+Content%2DType=application%2Fjson&statementId=4350544f%2Dc363%2D4ebc%2D9441%2D1183354543c2&moodle%5Fmod%5Fid=6&moodle%5Fmod=scorm&revision=1&registration=4e732ced3463d06de0ca9a15b6153677&Authorization=80379aaee7c6794ad3b60b129eeb7e35&content=%7B%22verb%22%3A%22experienced%22%2C%22actor%22%3Anull%2C%22context%22%3A%7B%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%2C%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%7D%2C%22object%22%3A%7B%22id%22%3A%225cgcNZPuHSe%22%7D%7D
+POST
+Array
+(
+    [method] => PUT
+    [Content-Type] => application/json
+    [statementId] => 4350544f-c363-4ebc-9441-1183354543c2
+    [moodle_mod_id] => 6
+    [moodle_mod] => scorm
+    [revision] => 1
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+    [content] => {\"verb\":\"experienced\",\"actor\":null,\"context\":{\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}},\"registration\":\"4e732ced3463d06de0ca9a15b6153677\"},\"object\":{\"id\":\"5cgcNZPuHSe\"}}
+)
+activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&stateId=resume&moodle%5Fmod%5Fid=6&revision=1&actor=null&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => GET
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [stateId] => resume
+    [moodle_mod_id] => 6
+    [revision] => 1
+    [actor] => null
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22verb%22%3A%22attempted%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22definition%22%3A%7B%22name%22%3A%7B%22und%22%3A%22%22%7D%2C%22description%22%3A%7B%22und%22%3A%22%22%7D%2C%22type%22%3A%22Course%22%7D%2C%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=b979a697%2Dbf07%2D47db%2D98cd%2D6ec45a956d9e&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"verb\":\"attempted\",\"actor\":null,\"object\":{\"definition\":{\"name\":{\"und\":\"\"},\"description\":{\"und\":\"\"},\"type\":\"Course\"},\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [moodle_mod_id] => 6
+    [statementId] => b979a697-bf07-47db-98cd-6ec45a956d9e
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&stateId=resume&moodle%5Fmod%5Fid=6&content=2w5840705060j41090d1101010501010r2005earth0101010100000000000%7E2y4%7E2s1a9101001a1a3XW0K6Ai0000cQi00l1%5F%2400m1pTi3000G0%5F%2400H0118%5Fdefaultpn02Hdfe720118%5Fdefault00000010%7E2V1a9101001a1a3vG0%7E281jDi300000118%5FdefaultcQi0002%5F%240012pTi3000l1%5F%2400m1118%5FdefaultcQi00G0%5F%2400H0pn02Lbfe720118%5Fdefault00000010%24a9101001a1a3XK0gfSgz0d1%5F%2405earthqo03Jw0fe720118%5Fdefault0000001000000&revision=1&actor=null&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [stateId] => resume
+    [moodle_mod_id] => 6
+    [content] => 2w5840705060j41090d1101010501010r2005earth0101010100000000000~2y4~2s1a9101001a1a3XW0K6Ai0000cQi00l1_$00m1pTi3000G0_$00H0118_defaultpn02Hdfe720118_default00000010~2V1a9101001a1a3vG0~281jDi300000118_defaultcQi0002_$0012pTi3000l1_$00m1118_defaultcQi00G0_$00H0pn02Lbfe720118_default00000010$a9101001a1a3XK0gfSgz0d1_$05earthqo03Jw0fe720118_default0000001000000
+    [revision] => 1
+    [actor] => null
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&stateId=resume&moodle%5Fmod%5Fid=6&content=2m58407050609810013110r2005earth0101010100000000000%7E2y4%7E2s1a9101001a1a3XW0K6Ai0000cQi00l1%5F%2400m1pTi3000G0%5F%2400H0118%5Fdefaultpn02Hdfe720118%5Fdefault00000010%7E2V1a9101001a1a3vG0%7E281jDi300000118%5FdefaultcQi0002%5F%240012pTi3000l1%5F%2400m1118%5FdefaultcQi00G0%5F%2400H0pn02Lbfe720118%5Fdefault00000010%24a9101001a1a3XK0gfSgz0d1%5F%2405earthqo03Jw0fe720118%5Fdefault0000001000000&revision=1&actor=null&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [stateId] => resume
+    [moodle_mod_id] => 6
+    [content] => 2m58407050609810013110r2005earth0101010100000000000~2y4~2s1a9101001a1a3XW0K6Ai0000cQi00l1_$00m1pTi3000G0_$00H0118_defaultpn02Hdfe720118_default00000010~2V1a9101001a1a3vG0~281jDi300000118_defaultcQi0002_$0012pTi3000l1_$00m1118_defaultcQi00G0_$00H0pn02Lbfe720118_default00000010$a9101001a1a3XK0gfSgz0d1_$05earthqo03Jw0fe720118_default0000001000000
+    [revision] => 1
+    [actor] => null
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22verb%22%3A%22experienced%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%225cgcNZPuHSe%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=ffb5fc87%2D08b5%2D4fc9%2D94c7%2D4936fdf42a04&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"verb\":\"experienced\",\"actor\":null,\"object\":{\"id\":\"5cgcNZPuHSe\"}}
+    [moodle_mod_id] => 6
+    [statementId] => ffb5fc87-08b5-4fc9-94c7-4936fdf42a04
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22result%22%3A%7B%22score%22%3A%7B%22raw%22%3A10%7D%2C%22response%22%3A%22statement%5F6MoQIzOkywp%5B%2E%5Dchoice%5F6dxw50J12qb%5B%2C%5Dstatement%5F6X5pMavJIqb%5B%2E%5Dchoice%5F5bjMcpSQbu1%5B%2C%5Dstatement%5F5rBWGPPX93B%5B%2E%5Dchoice%5F6JkGvbQYq5y%22%2C%22success%22%3Atrue%7D%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%225cv16q9HG8Q%22%7D%7D%7D%2C%22verb%22%3A%22answered%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%225cgcNZPuHSe%2Ea7450fa0%2Dc56b%2D4bbf%2D8716%2D30e987a55d4d%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=92075ac6%2D2dbf%2D45bc%2D9ff6%2D9378b5becc53&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"result\":{\"score\":{\"raw\":10},\"response\":\"statement_6MoQIzOkywp[.]choice_6dxw50J12qb[,]statement_6X5pMavJIqb[.]choice_5bjMcpSQbu1[,]statement_5rBWGPPX93B[.]choice_6JkGvbQYq5y\",\"success\":true},\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"5cv16q9HG8Q\"}}},\"verb\":\"answered\",\"actor\":null,\"object\":{\"id\":\"5cgcNZPuHSe.a7450fa0-c56b-4bbf-8716-30e987a55d4d\"}}
+    [moodle_mod_id] => 6
+    [statementId] => 92075ac6-2dbf-45bc-9ff6-9378b5becc53
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22verb%22%3A%22experienced%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%226hoSx7vtpP4%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=b45fdbb3%2D8d14%2D4cde%2D992b%2D90091c88850a&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"verb\":\"experienced\",\"actor\":null,\"object\":{\"id\":\"6hoSx7vtpP4\"}}
+    [moodle_mod_id] => 6
+    [statementId] => b45fdbb3-8d14-4cde-992b-90091c88850a
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&stateId=resume&moodle%5Fmod%5Fid=6&content=2o7a4070506080ji1001411a0131101411r2005earth0101010100000000000%7E2o6%7E2s1a9101001a1a3XW0K6Ai0000cQi00l1%5F%2400m1pTi3000G0%5F%2400H0118%5Fdefaultpn02Hdfe720118%5Fdefault00000010%7E2V1a9101001a1a3vG0%7E281jDi300000118%5FdefaultcQi0002%5F%240012pTi3000l1%5F%2400m1118%5FdefaultcQi00G0%5F%2400H0pn02Lbfe720118%5Fdefault00000010%24a9101001a1a3XK0gfSgz0d1%5F%2405earthqo03Jw0fe720118%5Fdefault00000010%7E2P1a9101001a1a3be1%7E221fSiG4k2%5F%2445i1014fSiG4i1%5F%2445g0015fSiG4g0%5F%2445k20165Cg0115Cg0125Cg013pn02Ycfe720118%5Fdefault000000100000&revision=1&actor=null&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [stateId] => resume
+    [moodle_mod_id] => 6
+    [content] => 2o7a4070506080ji1001411a0131101411r2005earth0101010100000000000~2o6~2s1a9101001a1a3XW0K6Ai0000cQi00l1_$00m1pTi3000G0_$00H0118_defaultpn02Hdfe720118_default00000010~2V1a9101001a1a3vG0~281jDi300000118_defaultcQi0002_$0012pTi3000l1_$00m1118_defaultcQi00G0_$00H0pn02Lbfe720118_default00000010$a9101001a1a3XK0gfSgz0d1_$05earthqo03Jw0fe720118_default00000010~2P1a9101001a1a3be1~221fSiG4k2_$45i1014fSiG4i1_$45g0015fSiG4g0_$45k20165Cg0115Cg0125Cg013pn02Ycfe720118_default000000100000
+    [revision] => 1
+    [actor] => null
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22result%22%3A%7B%22score%22%3A%7B%22raw%22%3A0%7D%2C%22response%22%3A%22choice%5F64Or8QRyNqJ%5B%2C%5Dchoice%5F5l5S2DnWezC%5B%2C%5Dchoice%5F6ahaFxsHDaf%5B%2C%5Dchoice%5F5dmhLA2lvHz%5B%2C%5Dchoice%5F6P5Ewtr0AV5%5B%2C%5Dchoice%5F5rvv1NAWm35%5B%2C%5Dchoice%5F61dfQpOlbpv%5B%2C%5Dchoice%5F5ah0Ia79vPz%22%2C%22success%22%3Afalse%7D%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%225cv16q9HG8Q%22%7D%7D%7D%2C%22verb%22%3A%22answered%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%226hoSx7vtpP4%2E6b284974%2D20f5%2D4f92%2Dbf8b%2D12634c643277%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=15282ae4%2Dc5a4%2D4921%2D8fac%2D60d9fe625ad5&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"result\":{\"score\":{\"raw\":0},\"response\":\"choice_64Or8QRyNqJ[,]choice_5l5S2DnWezC[,]choice_6ahaFxsHDaf[,]choice_5dmhLA2lvHz[,]choice_6P5Ewtr0AV5[,]choice_5rvv1NAWm35[,]choice_61dfQpOlbpv[,]choice_5ah0Ia79vPz\",\"success\":false},\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"5cv16q9HG8Q\"}}},\"verb\":\"answered\",\"actor\":null,\"object\":{\"id\":\"6hoSx7vtpP4.6b284974-20f5-4f92-bf8b-12634c643277\"}}
+    [moodle_mod_id] => 6
+    [statementId] => 15282ae4-c5a4-4921-8fac-60d9fe625ad5
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22verb%22%3A%22experienced%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%225wgwpXGIaWk%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=4fb1ed61%2Da05e%2D472f%2D9fa5%2D6cc309598348&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"verb\":\"experienced\",\"actor\":null,\"object\":{\"id\":\"5wgwpXGIaWk\"}}
+    [moodle_mod_id] => 6
+    [statementId] => 4fb1ed61-a05e-472f-9fa5-6cc309598348
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&stateId=resume&moodle%5Fmod%5Fid=6&content=2y8c904070506080on1001511f013110141101511r2005earth0101010100000000000%7E2r7%7E2s1a9101001a1a3XW0K6Ai0000cQi00l1%5F%2400m1pTi3000G0%5F%2400H0118%5Fdefaultpn02Hdfe720118%5Fdefault00000010%7E2V1a9101001a1a3vG0%7E281jDi300000118%5FdefaultcQi0002%5F%240012pTi3000l1%5F%2400m1118%5FdefaultcQi00G0%5F%2400H0pn02Lbfe720118%5Fdefault00000010%24a9101001a1a3XK0gfSgz0d1%5F%2405earthqo03Jw0fe720118%5Fdefault00000010%7E2P1a9101001a1a3be1%7E221fSiG4k2%5F%2445i1014fSiG4i1%5F%2445g0015fSiG4g0%5F%2445k20165Cg0115Cg0125Cg013pn02Ycfe720118%5Fdefault00000010%7E201a91010210102GejiSgA0B1%5F%240836710425p0n02Tefe720118%5Fdefault0000010000&revision=1&actor=null&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [stateId] => resume
+    [moodle_mod_id] => 6
+    [content] => 2y8c904070506080on1001511f013110141101511r2005earth0101010100000000000~2r7~2s1a9101001a1a3XW0K6Ai0000cQi00l1_$00m1pTi3000G0_$00H0118_defaultpn02Hdfe720118_default00000010~2V1a9101001a1a3vG0~281jDi300000118_defaultcQi0002_$0012pTi3000l1_$00m1118_defaultcQi00G0_$00H0pn02Lbfe720118_default00000010$a9101001a1a3XK0gfSgz0d1_$05earthqo03Jw0fe720118_default00000010~2P1a9101001a1a3be1~221fSiG4k2_$45i1014fSiG4i1_$45g0015fSiG4g0_$45k20165Cg0115Cg0125Cg013pn02Ycfe720118_default00000010~201a91010210102GejiSgA0B1_$0836710425p0n02Tefe720118_default0000010000
+    [revision] => 1
+    [actor] => null
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22result%22%3A%7B%22score%22%3A%7B%22raw%22%3A10%7D%2C%22response%22%3A%228%22%2C%22success%22%3Atrue%7D%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%225cv16q9HG8Q%22%7D%7D%7D%2C%22verb%22%3A%22answered%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%225wgwpXGIaWk%2E8fbebd0a%2D0127%2D4a10%2D809e%2D6e3b40fd91e7%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=1aeb69b7%2D0973%2D465f%2Da235%2D99d7c4b34e32&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"result\":{\"score\":{\"raw\":10},\"response\":\"8\",\"success\":true},\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"5cv16q9HG8Q\"}}},\"verb\":\"answered\",\"actor\":null,\"object\":{\"id\":\"5wgwpXGIaWk.8fbebd0a-0127-4a10-809e-6e3b40fd91e7\"}}
+    [moodle_mod_id] => 6
+    [statementId] => 1aeb69b7-0973-465f-a235-99d7c4b34e32
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22verb%22%3A%22experienced%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%225mAuWE6HMJX%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=f0fb3816%2D8435%2D46fd%2D900e%2De5bd4af0aee8&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"verb\":\"experienced\",\"actor\":null,\"object\":{\"id\":\"5mAuWE6HMJX\"}}
+    [moodle_mod_id] => 6
+    [statementId] => f0fb3816-8435-46fd-900e-e5bd4af0aee8
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&stateId=resume&moodle%5Fmod%5Fid=6&content=2A9e904070a0506080ts1001611k01311014110151101611s2005earth18101010100000000000%7E2l8%7E2s1a9101001a1a3XW0K6Ai0000cQi00l1%5F%2400m1pTi3000G0%5F%2400H0118%5Fdefaultpn02Hdfe720118%5Fdefault00000010%7E2V1a9101001a1a3vG0%7E281jDi300000118%5FdefaultcQi0002%5F%240012pTi3000l1%5F%2400m1118%5FdefaultcQi00G0%5F%2400H0pn02Lbfe720118%5Fdefault00000010%24a9101001a1a3XK0gfSgz0d1%5F%2405earthqo03Jw0fe720118%5Fdefault00000010%7E2P1a9101001a1a3be1%7E221fSiG4k2%5F%2445i1014fSiG4i1%5F%2445g0015fSiG4g0%5F%2445k20165Cg0115Cg0125Cg013pn02Ycfe720118%5Fdefault00000010%7E201a91010210102GejiSgA0B1%5F%240836710425p0n02Tefe720118%5Fdefault0000010Wa9101001a1a30N0cbSgz0H1%5F%24018pn02Lbfe720118%5Fdefault0000001000&revision=1&actor=null&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [stateId] => resume
+    [moodle_mod_id] => 6
+    [content] => 2A9e904070a0506080ts1001611k01311014110151101611s2005earth18101010100000000000~2l8~2s1a9101001a1a3XW0K6Ai0000cQi00l1_$00m1pTi3000G0_$00H0118_defaultpn02Hdfe720118_default00000010~2V1a9101001a1a3vG0~281jDi300000118_defaultcQi0002_$0012pTi3000l1_$00m1118_defaultcQi00G0_$00H0pn02Lbfe720118_default00000010$a9101001a1a3XK0gfSgz0d1_$05earthqo03Jw0fe720118_default00000010~2P1a9101001a1a3be1~221fSiG4k2_$45i1014fSiG4i1_$45g0015fSiG4g0_$45k20165Cg0115Cg0125Cg013pn02Ycfe720118_default00000010~201a91010210102GejiSgA0B1_$0836710425p0n02Tefe720118_default0000010Wa9101001a1a30N0cbSgz0H1_$018pn02Lbfe720118_default0000001000
+    [revision] => 1
+    [actor] => null
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22result%22%3A%7B%22response%22%3A%226HssioR0LFv%22%7D%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%225cv16q9HG8Q%22%7D%7D%7D%2C%22verb%22%3A%22answered%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%225mAuWE6HMJX%2E86ebc142%2D18dd%2D4d75%2Daf5f%2D269f604cfbd2%2EStatement%5F5xDTWOL4BBj%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=641e01ba%2Dc0b9%2D4c41%2D85a6%2D7f5934cf5850&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"result\":{\"response\":\"6HssioR0LFv\"},\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"5cv16q9HG8Q\"}}},\"verb\":\"answered\",\"actor\":null,\"object\":{\"id\":\"5mAuWE6HMJX.86ebc142-18dd-4d75-af5f-269f604cfbd2.Statement_5xDTWOL4BBj\"}}
+    [moodle_mod_id] => 6
+    [statementId] => 641e01ba-c0b9-4c41-85a6-7f5934cf5850
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22result%22%3A%7B%22response%22%3A%225dEzjq4qsKb%22%7D%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%225cv16q9HG8Q%22%7D%7D%7D%2C%22verb%22%3A%22answered%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%225mAuWE6HMJX%2E86ebc142%2D18dd%2D4d75%2Daf5f%2D269f604cfbd2%2EStatement%5F65NfCGfB1gG%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=e33af6be%2D5017%2D49ec%2D8634%2Dda85b6943c6e&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"result\":{\"response\":\"5dEzjq4qsKb\"},\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"5cv16q9HG8Q\"}}},\"verb\":\"answered\",\"actor\":null,\"object\":{\"id\":\"5mAuWE6HMJX.86ebc142-18dd-4d75-af5f-269f604cfbd2.Statement_65NfCGfB1gG\"}}
+    [moodle_mod_id] => 6
+    [statementId] => e33af6be-5017-49ec-8634-da85b6943c6e
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22result%22%3A%7B%22response%22%3A%226msxh59uUS7%22%7D%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%225cv16q9HG8Q%22%7D%7D%7D%2C%22verb%22%3A%22answered%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%225mAuWE6HMJX%2E86ebc142%2D18dd%2D4d75%2Daf5f%2D269f604cfbd2%2EStatement%5F66NyJzbxzL5%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=9ea2fe9a%2Dfedb%2D4c2d%2D941e%2D059769095232&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"result\":{\"response\":\"6msxh59uUS7\"},\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"5cv16q9HG8Q\"}}},\"verb\":\"answered\",\"actor\":null,\"object\":{\"id\":\"5mAuWE6HMJX.86ebc142-18dd-4d75-af5f-269f604cfbd2.Statement_66NyJzbxzL5\"}}
+    [moodle_mod_id] => 6
+    [statementId] => 9ea2fe9a-fedb-4c2d-941e-059769095232
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22verb%22%3A%22experienced%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%226dVvRwG8ieB%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=6d09cda3%2Dfe3a%2D447b%2D9bd4%2D0efd15c9dbe7&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"verb\":\"experienced\",\"actor\":null,\"object\":{\"id\":\"6dVvRwG8ieB\"}}
+    [moodle_mod_id] => 6
+    [statementId] => 6d09cda3-fe3a-447b-9bd4-0efd15c9dbe7
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&stateId=resume&moodle%5Fmod%5Fid=6&content=2tbgb0904070a0506080yx1001711p0131101411015110161101711s2005earth18101010100000000000%7E27a%7E2s1a9101001a1a3XW0K6Ai0000cQi00l1%5F%2400m1pTi3000G0%5F%2400H0118%5Fdefaultpn02Hdfe720118%5Fdefault00000010%7E2V1a9101001a1a3vG0%7E281jDi300000118%5FdefaultcQi0002%5F%240012pTi3000l1%5F%2400m1118%5FdefaultcQi00G0%5F%2400H0pn02Lbfe720118%5Fdefault00000010%24a9101001a1a3XK0gfSgz0d1%5F%2405earthqo03Jw0fe720118%5Fdefault00000010%7E2P1a9101001a1a3be1%7E221fSiG4k2%5F%2445i1014fSiG4i1%5F%2445g0015fSiG4g0%5F%2445k20165Cg0115Cg0125Cg013pn02Ycfe720118%5Fdefault00000010%7E201a91010210102GejiSgA0B1%5F%240836710425p0n02Tefe720118%5Fdefault0000010Wa9101001a1a30N0cbSgz0H1%5F%24018pn02Lbfe720118%5Fdefault00000010%7E2L1a91010310103PO0%7E2n17k00V0%5F%2414141414e720118%5Fdefault7k00s0%5F%241414e720118%5Fdefault141414e720118%5Fdefault14141414000100&revision=1&actor=null&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [stateId] => resume
+    [moodle_mod_id] => 6
+    [content] => 2tbgb0904070a0506080yx1001711p0131101411015110161101711s2005earth18101010100000000000~27a~2s1a9101001a1a3XW0K6Ai0000cQi00l1_$00m1pTi3000G0_$00H0118_defaultpn02Hdfe720118_default00000010~2V1a9101001a1a3vG0~281jDi300000118_defaultcQi0002_$0012pTi3000l1_$00m1118_defaultcQi00G0_$00H0pn02Lbfe720118_default00000010$a9101001a1a3XK0gfSgz0d1_$05earthqo03Jw0fe720118_default00000010~2P1a9101001a1a3be1~221fSiG4k2_$45i1014fSiG4i1_$45g0015fSiG4g0_$45k20165Cg0115Cg0125Cg013pn02Ycfe720118_default00000010~201a91010210102GejiSgA0B1_$0836710425p0n02Tefe720118_default0000010Wa9101001a1a30N0cbSgz0H1_$018pn02Lbfe720118_default00000010~2L1a91010310103PO0~2n17k00V0_$14141414e720118_default7k00s0_$1414e720118_default141414e720118_default14141414000100
+    [revision] => 1
+    [actor] => null
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22result%22%3A%7B%22score%22%3A%7B%22max%22%3A60%2C%22raw%22%3A50%2C%22min%22%3A0%2C%22scaled%22%3A0%2E8332999999999999%7D%2C%22success%22%3A%22true%22%7D%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%225cv16q9HG8Q%22%7D%7D%7D%2C%22verb%22%3A%22passed%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%225cv16q9HG8Q%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=cc48676b%2D6088%2D48b7%2D9ccb%2D876cc3c664d4&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"result\":{\"score\":{\"max\":60,\"raw\":50,\"min\":0,\"scaled\":0.8332999999999999},\"success\":\"true\"},\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"5cv16q9HG8Q\"}}},\"verb\":\"passed\",\"actor\":null,\"object\":{\"id\":\"5cv16q9HG8Q\"}}
+    [moodle_mod_id] => 6
+    [statementId] => cc48676b-6088-48b7-9ccb-876cc3c664d4
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22result%22%3A%7B%22score%22%3A%7B%22scaled%22%3A0%2E8332999999999999%7D%2C%22success%22%3A%22true%22%2C%22duration%22%3A%22PT0H0M16%2E35S%22%7D%2C%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22verb%22%3A%22passed%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=a471034c%2D41c4%2D43a2%2Daf45%2D7268619bdcf1&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"result\":{\"score\":{\"scaled\":0.8332999999999999},\"success\":\"true\",\"duration\":\"PT0H0M16.35S\"},\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"verb\":\"passed\",\"actor\":null,\"object\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}
+    [moodle_mod_id] => 6
+    [statementId] => a471034c-41c4-43a2-af45-7268619bdcf1
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&content=%7B%22context%22%3A%7B%22registration%22%3A%224e732ced3463d06de0ca9a15b6153677%22%2C%22contextActivities%22%3A%7B%22grouping%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%2C%22parent%22%3A%7B%22id%22%3A%22http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml%22%7D%7D%7D%2C%22verb%22%3A%22experienced%22%2C%22actor%22%3Anull%2C%22object%22%3A%7B%22id%22%3A%225jIOVMY3lI7%22%7D%7D&moodle%5Fmod%5Fid=6&statementId=98b3d2fc%2De911%2D4390%2Da728%2Db0573dd96bab&revision=1&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [content] => {\"context\":{\"registration\":\"4e732ced3463d06de0ca9a15b6153677\",\"contextActivities\":{\"grouping\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"},\"parent\":{\"id\":\"http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml\"}}},\"verb\":\"experienced\",\"actor\":null,\"object\":{\"id\":\"5jIOVMY3lI7\"}}
+    [moodle_mod_id] => 6
+    [statementId] => 98b3d2fc-e911-4390-a728-b0573dd96bab
+    [revision] => 1
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)
+activityId=http%3A%2F%2Flocalhost%2Fpluginfile%2Ephp%2F25%2Fmod%5Fscorm%2Fcontent%2F1%2Ftincan%2Exml&registration=4e732ced3463d06de0ca9a15b6153677&Content%2DType=application%2Fjson&moodle%5Fmod=scorm&stateId=resume&moodle%5Fmod%5Fid=6&content=2Ycgb0904070a0506080DC1001011u013110141101511016110171101011%7E2F12%2415earth18101010100b5cv16q9HG8Qb5cv16q9HG8Qb5cv16q9HG8Qb5cv16q9HG8Qb5cv16q9HG8Qb5cv16q9HG8Qb5cv16q9HG8Q00%7E2ha%7E2s1a9101001a1a3XW0K6Ai0000cQi00l1%5F%2400m1pTi3000G0%5F%2400H0118%5Fdefaultpn02Hdfe720118%5Fdefault00000010%7E2V1a9101001a1a3vG0%7E281jDi300000118%5FdefaultcQi0002%5F%240012pTi3000l1%5F%2400m1118%5FdefaultcQi00G0%5F%2400H0pn02Lbfe720118%5Fdefault00000010%24a9101001a1a3XK0gfSgz0d1%5F%2405earthqo03Jw0fe720118%5Fdefault00000010%7E2P1a9101001a1a3be1%7E221fSiG4k2%5F%2445i1014fSiG4i1%5F%2445g0015fSiG4g0%5F%2445k20165Cg0115Cg0125Cg013pn02Ycfe720118%5Fdefault00000010%7E201a91010210102GejiSgA0B1%5F%240836710425p0n02Tefe720118%5Fdefault0000010Wa9101001a1a30N0cbSgz0H1%5F%24018pn02Lbfe720118%5Fdefault00000010%7E2L1a91010310103PO0%7E2n17k00V0%5F%2414141414e720118%5Fdefault7k00s0%5F%241414e720118%5Fdefault141414e720118%5Fdefault1414141400010a02Ju002100&revision=1&actor=null&Authorization=80379aaee7c6794ad3b60b129eeb7e35
+POST
+Array
+(
+    [method] => PUT
+    [activityId] => http://localhost/pluginfile.php/25/mod_scorm/content/1/tincan.xml
+    [registration] => 4e732ced3463d06de0ca9a15b6153677
+    [Content-Type] => application/json
+    [moodle_mod] => scorm
+    [stateId] => resume
+    [moodle_mod_id] => 6
+    [content] => 2Ycgb0904070a0506080DC1001011u013110141101511016110171101011~2F12$15earth18101010100b5cv16q9HG8Qb5cv16q9HG8Qb5cv16q9HG8Qb5cv16q9HG8Qb5cv16q9HG8Qb5cv16q9HG8Qb5cv16q9HG8Q00~2ha~2s1a9101001a1a3XW0K6Ai0000cQi00l1_$00m1pTi3000G0_$00H0118_defaultpn02Hdfe720118_default00000010~2V1a9101001a1a3vG0~281jDi300000118_defaultcQi0002_$0012pTi3000l1_$00m1118_defaultcQi00G0_$00H0pn02Lbfe720118_default00000010$a9101001a1a3XK0gfSgz0d1_$05earthqo03Jw0fe720118_default00000010~2P1a9101001a1a3be1~221fSiG4k2_$45i1014fSiG4i1_$45g0015fSiG4g0_$45k20165Cg0115Cg0125Cg013pn02Ycfe720118_default00000010~201a91010210102GejiSgA0B1_$0836710425p0n02Tefe720118_default0000010Wa9101001a1a30N0cbSgz0H1_$018pn02Lbfe720118_default00000010~2L1a91010310103PO0~2n17k00V0_$14141414e720118_default7k00s0_$1414e720118_default141414e720118_default1414141400010a02Ju002100
+    [revision] => 1
+    [actor] => null
+    [Authorization] => 80379aaee7c6794ad3b60b129eeb7e35
+)

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/tcapi/db" VERSION="20130107" COMMENT="XMLDB file for Moodle local/tcapi"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="tcapi_activity" COMMENT="tcapi_activity table retrofitted from MySQL" NEXT="tcapi_agent">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="true" NEXT="activity_id"/>
+        <FIELD NAME="activity_id" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="metaurl"/>
+        <FIELD NAME="metaurl" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="activity_id" NEXT="known"/>
+        <FIELD NAME="known" TYPE="int" LENGTH="3" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="metaurl" NEXT="name"/>
+        <FIELD NAME="name" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="known" NEXT="description"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="name" NEXT="type"/>
+        <FIELD NAME="type" TYPE="char" LENGTH="50" NOTNULL="false" SEQUENCE="false" PREVIOUS="description" NEXT="interaction_type"/>
+        <FIELD NAME="interaction_type" TYPE="char" LENGTH="50" NOTNULL="false" SEQUENCE="false" PREVIOUS="type" NEXT="extensions"/>
+        <FIELD NAME="extensions" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="interaction_type" NEXT="grouping_id"/>
+        <FIELD NAME="grouping_id" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="extensions"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="id" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="activityid" UNIQUE="false" FIELDS="activity_id"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="tcapi_agent" COMMENT="tcapi_agent table retrofitted from MySQL" PREVIOUS="tcapi_activity" NEXT="tcapi_result">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="true" NEXT="object_type"/>
+        <FIELD NAME="object_type" TYPE="char" LENGTH="25" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="name"/>
+        <FIELD NAME="name" TYPE="text" NOTNULL="true" SEQUENCE="false" PREVIOUS="object_type" NEXT="mbox"/>
+        <FIELD NAME="mbox" TYPE="text" NOTNULL="true" SEQUENCE="false" PREVIOUS="name" NEXT="mbox_sha1sum"/>
+        <FIELD NAME="mbox_sha1sum" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="mbox" NEXT="localid"/>
+        <FIELD NAME="localid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="mbox_sha1sum" NEXT="openid"/>
+        <FIELD NAME="openid" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="localid" NEXT="account"/>
+        <FIELD NAME="account" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="openid" NEXT="given_name"/>
+        <FIELD NAME="given_name" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="account" NEXT="family_name"/>
+        <FIELD NAME="family_name" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="given_name" NEXT="first_name"/>
+        <FIELD NAME="first_name" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="family_name" NEXT="last_name"/>
+        <FIELD NAME="last_name" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="first_name" NEXT="member"/>
+        <FIELD NAME="member" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="last_name"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="id" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tcapi_result" COMMENT="tcapi_result table retrofitted from MySQL" PREVIOUS="tcapi_agent" NEXT="tcapi_state">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="true" NEXT="score"/>
+        <FIELD NAME="score" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="id" NEXT="success"/>
+        <FIELD NAME="success" TYPE="int" LENGTH="3" NOTNULL="false" SEQUENCE="false" PREVIOUS="score" NEXT="completion"/>
+        <FIELD NAME="completion" TYPE="int" LENGTH="3" NOTNULL="false" SEQUENCE="false" PREVIOUS="success" NEXT="response"/>
+        <FIELD NAME="response" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="completion" NEXT="duration"/>
+        <FIELD NAME="duration" TYPE="char" LENGTH="25" NOTNULL="false" SEQUENCE="false" PREVIOUS="response" NEXT="extensions"/>
+        <FIELD NAME="extensions" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="duration"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="id" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="tcapi_state" COMMENT="tcapi_state table retrofitted from MySQL" PREVIOUS="tcapi_result" NEXT="tcapi_statement">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="true" NEXT="activityid"/>
+        <FIELD NAME="activityid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="actorid"/>
+        <FIELD NAME="actorid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="activityid" NEXT="state_id"/>
+        <FIELD NAME="state_id" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" PREVIOUS="actorid" NEXT="registration"/>
+        <FIELD NAME="registration" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="state_id" NEXT="contents"/>
+        <FIELD NAME="contents" TYPE="text" NOTNULL="true" SEQUENCE="false" PREVIOUS="registration" NEXT="updated"/>
+        <FIELD NAME="updated" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="contents"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="stateid" TYPE="unique" FIELDS="activityid, actorid, state_id" NEXT="id"/>
+        <KEY NAME="id" TYPE="primary" FIELDS="id" PREVIOUS="stateid"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="activityid" UNIQUE="false" FIELDS="activityid, actorid"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="tcapi_statement" COMMENT="tcapi_statement table retrofitted from MySQL" PREVIOUS="tcapi_state">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="true" NEXT="statement_id"/>
+        <FIELD NAME="statement_id" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="statement"/>
+        <FIELD NAME="statement" TYPE="text" NOTNULL="true" SEQUENCE="false" PREVIOUS="statement_id" NEXT="actorid"/>
+        <FIELD NAME="actorid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="statement" NEXT="verb"/>
+        <FIELD NAME="verb" TYPE="char" LENGTH="50" NOTNULL="false" SEQUENCE="false" PREVIOUS="actorid" NEXT="objectid"/>
+        <FIELD NAME="objectid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="verb" NEXT="object_type"/>
+        <FIELD NAME="object_type" TYPE="char" LENGTH="50" NOTNULL="false" SEQUENCE="false" PREVIOUS="objectid" NEXT="resultid"/>
+        <FIELD NAME="resultid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="object_type" NEXT="registration"/>
+        <FIELD NAME="registration" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="resultid" NEXT="instructorid"/>
+        <FIELD NAME="instructorid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="registration" NEXT="teamid"/>
+        <FIELD NAME="teamid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="instructorid" NEXT="context_parentid"/>
+        <FIELD NAME="context_parentid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="teamid" NEXT="context_groupingid"/>
+        <FIELD NAME="context_groupingid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="context_parentid" NEXT="context_otherid"/>
+        <FIELD NAME="context_otherid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="context_groupingid" NEXT="timestamp"/>
+        <FIELD NAME="timestamp" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="context_otherid" NEXT="stored"/>
+        <FIELD NAME="stored" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="timestamp" NEXT="authority"/>
+        <FIELD NAME="authority" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="stored" NEXT="voided"/>
+        <FIELD NAME="voided" TYPE="int" LENGTH="3" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="authority"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="id" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="statementid" UNIQUE="false" FIELDS="statement_id"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>
