@@ -26,10 +26,13 @@
 
 defined('MOODLE_INTERNAL') || die;
 
+/*
+ * For future use.
 if ($hassiteconfig) {
 	$settings = new admin_settingpage('local_tcapi', get_string('tcapi:settings','local_tcapi'));
 	$ADMIN->add('localplugins', $settings);
 	$settings->add(new admin_setting_configcheckbox('local_tcapi/onoff', get_string('tcapi:onoffoption','local_tcapi'), get_string('tcapi:onoffoptiondescr','local_tcapi'), '0'));
 }
+*/
 
 ?>

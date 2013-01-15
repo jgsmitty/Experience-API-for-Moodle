@@ -22,7 +22,7 @@ if (isset($CFG->tcapi_content_endpoint))
 else
 	define('TCAPI_CONTENT_ENDPOINT',$CFG->wwwroot.'/local/tcapi/content_endpoint.php');
 	
-/*
+/**
  * Set SYSTEM role permission assignments for use of TCAPI.
  * This includes moodle/webservice:createtoken and local/tcapi:use.
  * Affected user role is Authenticated user / user
@@ -33,6 +33,7 @@ function local_tcapi_set_role_permission_overrides() {
 	if (isset($role->id)) {
 		require_once $CFG->dirroot.'/lib/accesslib.php';
 		role_change_permission($role->id, context_system::instance(), 'moodle/webservice:createtoken', CAP_ALLOW);
+		role_change_permission($role->id, context_system::instance(), 'webservice/rest:use', CAP_ALLOW);
 		role_change_permission($role->id, context_system::instance(), 'local/tcapi:use', CAP_ALLOW);
 	}
 }
@@ -75,6 +76,11 @@ function local_tcapi_get_user_token() {
     return $token;
 }
 
+/**
+ * Simple check to see if a token for TCAPI web service already exists for a user
+ * and returns it.
+ * @param Integer $serviceid
+ */
 function local_tcapi_user_token_exists($serviceid=null) {
 	global $USER,$DB;
 	if ($serviceid == null) {
@@ -175,6 +181,7 @@ class webservice_tcapi_server extends webservice_base_server {
     
     /**
      * Send the result of function call to the WS client.
+     * If an exception is caught, ensure a failure response code is sent.
      */
     protected function send_response() {
 
@@ -245,7 +252,7 @@ class webservice_tcapi_server extends webservice_base_server {
     
     /**
      * Internal implementation - get function name to execute
-     * as part of webservice request
+     * as part of webservice request.
      * @return string name of external function
      */
     protected function get_functionname() {
@@ -372,6 +379,14 @@ class webservice_tcapi_test_client implements webservice_test_client_interface {
     }
 }
 
+/**
+ * Store posted statement and return statement id.
+ * This function is called by the external service in externallib.php.
+ * @param array $params array of parameter passed from external service 
+ * @throws invalid_response_exception
+ * @throws invalid_parameter_exception
+ * @return mixed $return object to be used by external service or false if failure
+ */
 function local_tcapi_store_statement ($params) {
 	global $DB;
 	if (!is_null($params['content']) && ($statement = json_decode($params['content']))) {
@@ -531,6 +546,14 @@ function local_tcapi_store_statement ($params) {
 	return false;
 }
 
+/**
+ * Stores a posted activity state.
+ * Called by the external service in externallib.php
+ * @param array $params array of parameter passed from external service
+ * @throws invalid_response_exception
+ * @throws invalid_parameter_exception
+ * @return mixed empty string or throws exception
+ */
 function local_tcapi_store_activity_state ($params) {
 	global $DB;
 	if (!is_null($params['activityId']) && !is_null($params['stateId']) && !is_null($params['content'])) {
@@ -562,6 +585,15 @@ function local_tcapi_store_activity_state ($params) {
 	throw new invalid_parameter_exception('Parameters invalid or state could not be stored.');
 }
 
+/**
+ * Retrieves an activity state.
+ * Called by the external service in externallib.php.
+ * If the stateId is provided, will return the value stored under that stateId. Otherwise,
+ * will return all stored stateIds as json encoded array.
+ * @param array $params array of parameter passed from external service
+ * @throws invalid_parameter_exception
+ * @return mixed string containing state, string containing json encoded array of stored stateIds, or throws exception
+ */
 function local_tcapi_fetch_activity_state ($params) {
 	global $DB;
 	if (!is_null($params['activityId'])) {
@@ -591,6 +623,11 @@ function local_tcapi_fetch_activity_state ($params) {
 	throw new invalid_parameter_exception('Parameters invalid or state could not be retrieved.');
 }
 
+/**
+ * Permanently deletes all states associated with a specific author and activity.
+ * @param array $params array of parameter passed from external service
+ * @return mixed an empty string if success or throws an exception
+ */
 function local_tcapi_delete_activity_state ($params) {
 	global $DB;
 	if (!is_null($params['activityId'])) {
