@@ -5,7 +5,8 @@ Experience API for Moodle as a local plugin
 
 Installation / Configuration Settings:
 
-1. Copy the contents of this package into the local folder in Moodle.
+1. Create a folder in Moodle under the ./local folder named tcapi.
+2. Copy the contents of this package into the ./local/tcapi folder in Moodle.
 2. Return to Moodle and allow the plugin to install. This will create new tables and turn on specific permissions to the authenticated user role.
 3. In order for the TCAPI to work, you will still need to enable web services withing Moodle and enable the REST web service protocol.
 4. Go to the Site Administration -> Plugins -> Web Services -> Overview. You will see the steps to allow external system to control Moodle.
