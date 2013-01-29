@@ -16,4 +16,8 @@ Installation / Configuration Settings:
 You Moodle installation should now be set to receive TCAPI statements.
 
 The endpoint for TCAPI is http://moodlesite/local/tcapi/endpoint.php.
+<<<<<<< HEAD
 If you're using the modified SCORM module for TIN CAN packages, you should not have to modify any settings beyond the steps above.
+=======
+If you're using the modified SCORM module for TIN CAN packages, you should not have to modify any settings beyond the steps above.
+>>>>>>> 7205b03cdd8bc4c0009c85214717c79b9eea584e
