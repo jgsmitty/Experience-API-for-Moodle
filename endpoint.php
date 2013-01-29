@@ -12,12 +12,13 @@ define('NO_MOODLE_COOKIES', true);
 include_once '../../config.php';
 include_once './locallib.php';
 
-ob_start();
+if (TCAPI_LOG_ENDPOINT) {
+	ob_start();
         $methodvariables = array();
         // Get GET and POST parameters.
         $methodvariables = array_merge($_GET, $_POST);
         // now how about PUT/POST bodies? These override any existing parameters.
-        $body = file_get_contents("php://input");
+        $DEBUGBODY = $body = file_get_contents("php://input");
         echo $body."\n";
         if ($body_params = json_decode($body)) {
             foreach($body_params as $param_name => $param_value) {
@@ -32,14 +33,13 @@ ob_start();
         }
         echo $_SERVER['REQUEST_METHOD']."\n";
         print_r($methodvariables);
-$contents = ob_get_contents();
-if (TCAPI_LOG_ENDPOINT) {
+	$contents = ob_get_contents();
 	$h = fopen("log.txt",'a+');
 	fwrite($h, $contents);
 	fclose($h);	
+	ob_end_clean();
 }
 
-ob_end_clean();
 
 /**
  * TCAPI REST web service entry point.

@@ -129,6 +129,7 @@ class webservice_tcapi_server extends webservice_base_server {
     protected $response_code;
     /** @var boolean encode response as json string */
     protected $response_encode;
+    protected $request_method;
     
     /**
      * Contructor
@@ -159,8 +160,17 @@ class webservice_tcapi_server extends webservice_base_server {
         $methodvariables = array();
         // Get GET and POST parameters.
         $methodvariables = array_merge($_GET, $_POST);
+	    $this->requestmethod = (isset($methodvariables['method'])) ? $methodvariables['method'] : $_SERVER['REQUEST_METHOD'];
         // now how about PUT/POST bodies? These override any existing parameters.
-        $body = file_get_contents("php://input");
+        $body = @file_get_contents('php://input');
+        if (TCAPI_LOG_ENDPOINT) {
+        	global $DEBUGBODY;
+        	if (isset($DEBUGBODY))
+        		$body = $DEBUGBODY;
+        }
+        //echo $body;
+        if ($this->requestmethod == 'PUT' && !isset($methodvariables['content']))
+        	$methodvariables['content'] = $body;      
         if ($body_params = json_decode($body)) {
             foreach($body_params as $param_name => $param_value) {
                 $methodvariables[$param_name] = stripslashes($param_value);
@@ -172,11 +182,13 @@ class webservice_tcapi_server extends webservice_base_server {
                 $methodvariables[$param_name] = stripslashes($param_value);
             }
         }
+
+        //print_r($methodvariables);
         $this->token = isset($methodvariables['Authorization']) ? $methodvariables['Authorization'] : null;
         unset($methodvariables['Authorization']);
         $this->parameters = $methodvariables;
      	$this->functionname = $this->get_functionname();
-     	
+     	//echo $this->functionname;
     }
     
     /**
@@ -285,11 +297,10 @@ class webservice_tcapi_server extends webservice_base_server {
 	        }
 	    }
 		$functionname = '';
-	    $request_method = (isset($this->parameters['method'])) ? $this->parameters['method'] : $_SERVER['REQUEST_METHOD'];
 	    unset($this->parameters['method']);
 	    
         if (substr($relativepath,0,11) == '/statements') {
-        	switch ($request_method) {
+        	switch ($this->requestmethod) {
         		case  'PUT':
         			$functionname = 'store_statement';
         			$this->response_encode = false;
@@ -303,7 +314,7 @@ class webservice_tcapi_server extends webservice_base_server {
         	}
         } else if (substr($relativepath,0,17) == '/activities/state') {
         	$this->response_encode = false;
-        	switch ($request_method) {
+        	switch ($this->requestmethod) {
         		case  'PUT':
         			$functionname = 'store_activity_state';
         			break;
@@ -660,13 +671,15 @@ function local_tcapi_get_actor ($actor, $objectType = false) {
 			$object->mbox[$key] = (strpos($val,'mailto:') !== false) ? substr($val,strpos($val,'mailto:')+7,strlen($val)) : $val;
 	}
 	$sqlwhere = 'object_type=\'person\'';
-	$sqllocalwhere = (isset($object->localid)) ? ' OR localid = '.$USER->id : '';
-	if (isset($object->mbox) && !empty($object->mbox))
-		$sqlwhere .= ' AND ((mbox LIKE \'%'. implode("'%\' OR mbox LIKE \'%'",$object->mbox) .'%\') '.$sqllocalwhere;
+	$xtrasql = array();
+	if (isset($object->localid))
+		array_push($xtrasql, 'localid = '.$USER->id);
 	if (isset($object->mbox_sha1sum) && !empty($object->mbox_sha1sum))
-		$sqlwhere .= ' OR (mbox_sha1sum LIKE \'%'. implode("'%\' OR mbox_sha1sum LIKE \'%'",$object->mbox_sha1sum) .'%\))';
-	else
-		$sqlwhere .= ')';
+		array_push($xtrasql, '(mbox_sha1sum LIKE \'%'. implode("'%\' OR mbox_sha1sum LIKE \'%'",$object->mbox_sha1sum) .'%\))');
+	if (isset($object->mbox) && !empty($object->mbox))
+		array_push($xtrasql, '(mbox LIKE \'%'. implode("'%\' OR mbox LIKE \'%'",$object->mbox) .'%\')');
+	if (!empty($xtrasql))
+		$sqlwhere .= 'AND ('.implode(" OR ", $xtrasql).')';
 	if (($actor = $DB->get_record_select('tcapi_agent', $sqlwhere)))
 	{
 		$actor = local_tcapi_push_actor_properties($actor, $object);
