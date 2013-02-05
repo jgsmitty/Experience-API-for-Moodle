@@ -33,6 +33,12 @@ if (TCAPI_LOG_ENDPOINT) {
         }
         echo $_SERVER['REQUEST_METHOD']."\n";
         print_r($methodvariables);
+        echo 'SERVER'."\n";
+        print_r($_SERVER);
+        if (function_exists('apache_request_headers')) {
+        	$ah = apache_request_headers();
+	        print_r($ah);
+        }
 	$contents = ob_get_contents();
 	$h = fopen("log.txt",'a+');
 	fwrite($h, $contents);

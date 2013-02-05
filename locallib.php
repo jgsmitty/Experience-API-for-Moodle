@@ -159,9 +159,12 @@ class webservice_tcapi_server extends webservice_base_server {
 
         $methodvariables = array();
         // Get GET and POST parameters.
-        $methodvariables = array_merge($_GET, $_POST);
+        $methodvariables = array_merge($_GET, $_POST, $this->get_headers());
 	    $this->requestmethod = (isset($methodvariables['method'])) ? $methodvariables['method'] : $_SERVER['REQUEST_METHOD'];
-        // now how about PUT/POST bodies? These override any existing parameters.
+	    if ($this->requestmethod == 'OPTIONS')
+	    	$this->send_options();
+	    
+	    // now how about PUT/POST bodies? These override any existing parameters.
         $body = @file_get_contents('php://input');
         if (TCAPI_LOG_ENDPOINT) {
         	global $DEBUGBODY;
@@ -169,7 +172,7 @@ class webservice_tcapi_server extends webservice_base_server {
         		$body = $DEBUGBODY;
         }
         //echo $body;
-        if ($this->requestmethod == 'PUT' && !isset($methodvariables['content']))
+        if (!isset($methodvariables['content']))
         	$methodvariables['content'] = $body;      
         if ($body_params = json_decode($body)) {
             foreach($body_params as $param_name => $param_value) {
@@ -183,15 +186,72 @@ class webservice_tcapi_server extends webservice_base_server {
             }
         }
 
+        // Determine Authentication method to use (WEBSERVICE_AUTHMETHOD_PERMANENT_TOKEN is default)
+        // Simple token (as used in Bookmarklet method) and Basic authentication is supported at this time.
+        if (isset($methodvariables['Authorization'])) {
+        	// TODO: Add support for OAuth authentication. That should really be a web service addition so we can call it here.
+        	if (substr($methodvariables['Authorization'], 0, 5) == 'Basic') {
+        		$user_auth = explode(":",base64_decode(substr($methodvariables['Authorization'], 6)));
+        		if (is_array($user_auth) && count($user_auth) == 2) {
+        			$this->username = $user_auth[0];
+        			$this->password = $user_auth[1];
+        			$this->authmethod = WEBSERVICE_AUTHMETHOD_USERNAME;
+        			//echo 'Uses Basic Auth with Username: '.$this->username.' and Password: '.$this->password."\n";
+        		}
+        	} else {
+		        $this->token = isset($methodvariables['Authorization']) ? $methodvariables['Authorization'] : null;        		
+        		//echo 'Uses Token Auth with Token: '.$this->token."\n";
+        	}
+        }
         //print_r($methodvariables);
-        $this->token = isset($methodvariables['Authorization']) ? $methodvariables['Authorization'] : null;
         unset($methodvariables['Authorization']);
         $this->parameters = $methodvariables;
      	$this->functionname = $this->get_functionname();
      	//echo $this->functionname;
     }
     
-    /**
+	/**
+	 * Try to sort out headers for people who aren't running apache
+	 */
+	public static function get_headers() {
+	  if (function_exists('apache_request_headers')) {
+	    // we need this to get the actual Authorization: header
+	    // because apache tends to tell us it doesn't exist
+	    return apache_request_headers();
+	  }
+	  // otherwise we don't have apache and are just going to have to hope
+	  // that $_SERVER actually contains what we need
+	  $out = array();
+	  foreach ($_SERVER as $key => $value) {
+	    if (substr($key, 0, 5) == "HTTP_") {
+	      // this is chaos, basically it is just there to capitalize the first
+	      // letter of every word that is not an initial HTTP and strip HTTP
+	      // code from przemek
+	      $key = str_replace(
+	        " ",
+	        "-",
+	        ucwords(strtolower(str_replace("_", " ", substr($key, 5))))
+	      );
+	      $out[$key] = $value;
+	    }
+	  }
+	  return $out;
+	}
+
+	protected function send_options() {
+    	header("HTTP/1.0 200 OK");
+        header('Content-type: text/plain');
+        header('Content-length: 0');
+        header('Connection: Keep Alive');
+        header('Keep Alive: timeout=2, max=100'); // TODO: What is most appropriate? Is this necessary?
+        header('Access-Control-Allow-Origin: *'); // TODO: Decide how or whether or not to limit Xdomains.
+        header('Access-Control-Allow-Methods: PUT, DELETE, POST, GET, OPTIONS'); // TODO: Should we base this on specific request and restrict based on endpoint target/request?
+        header('Access-Control-Allow-Headers: authorization,content-type'); // TODO: Should we base this on specific request and restrict based on endpoint target/request?
+        header('Access-Control-Max-Age: 1728000'); // TODO: What's appropriate here?
+        exit();
+	}
+	
+	/**
      * Send the result of function call to the WS client.
      * If an exception is caught, ensure a failure response code is sent.
      */
@@ -255,7 +315,8 @@ class webservice_tcapi_server extends webservice_base_server {
     	if ($iserror && $this->response_code == '200')
             $this->response_code = '400';
     	header("HTTP/1.0 ".$this->response_code,true,$this->response_code);
-        header('Content-type: application/json');
+        header('Access-Control-Allow-Origin: *'); // TODO: Decide how or whether or not to limit Xdomains.
+    	header('Content-type: application/json');
         header('Cache-Control: private, must-revalidate, pre-check=0, post-check=0, max-age=0');
         header('Expires: '. gmdate('D, d M Y H:i:s', 0) .' GMT');
         header('Pragma: no-cache');
@@ -408,8 +469,8 @@ function local_tcapi_store_statement ($params) {
 		        $numtries ++;
 		        $statementId = md5(uniqid(rand(),1));
 		        if ($numtries > 5)
-		            throw new invalid_response_exception('Could not create statementId.');
-		    } while ($DB->record_exists('tcapi_statement', array('statementId'=>$statementId)) && $numtries <= 5);
+		            throw new invalid_response_exception('Could not create statement_id.');
+		    } while ($DB->record_exists('tcapi_statement', array('statement_id'=>$statementId)) && $numtries <= 5);
 		} else
 			$statementId = (isset($statement->id)) ? $statement->id : $params['statementId'];
 		$sData = new stdClass();
@@ -461,6 +522,8 @@ function local_tcapi_store_statement ($params) {
 					if (isset($statement->object->id)) {
 						$activity = new stdClass();
 						$activity->activity_id = $statement->object->id;
+						if (isset($statement->object->definition))
+							$activity->definition = $statement->object->definition;
 						if (isset($sData->context_groupingid))
 							$activity->grouping_id = $sData->context_groupingid;
 						if (!($activity = local_tcapi_get_activity($activity))) {
@@ -668,7 +731,7 @@ function local_tcapi_get_actor ($actor, $objectType = false) {
 		$object = $actor;
 	if (isset($object->mbox) && !empty($object->mbox)) {
 		foreach ($object->mbox as $key=>$val)
-			$object->mbox[$key] = (strpos($val,'mailto:') !== false) ? substr($val,strpos($val,'mailto:')+7,strlen($val)) : $val;
+			$object->mbox[$key] = (strpos($val,'mailto:') !== false) ? substr($val,strpos($val,'mailto:')+7) : $val;
 	}
 	$sqlwhere = 'object_type=\'person\'';
 	$xtrasql = array();
@@ -679,7 +742,7 @@ function local_tcapi_get_actor ($actor, $objectType = false) {
 	if (isset($object->mbox) && !empty($object->mbox))
 		array_push($xtrasql, '(mbox LIKE \'%'. implode("'%\' OR mbox LIKE \'%'",$object->mbox) .'%\')');
 	if (!empty($xtrasql))
-		$sqlwhere .= 'AND ('.implode(" OR ", $xtrasql).')';
+		$sqlwhere .= ' AND ('.implode(" OR ", $xtrasql).')';
 	if (($actor = $DB->get_record_select('tcapi_agent', $sqlwhere)))
 	{
 		$actor = local_tcapi_push_actor_properties($actor, $object);
@@ -702,7 +765,7 @@ function local_tcapi_get_actor ($actor, $objectType = false) {
 function local_tcapi_get_activity ($object, $mustExist=false, $forceupdate=false) {
 	global $DB,$CFG;
 	$isMetaLink = (filter_var($object->activity_id,FILTER_VALIDATE_URL,FILTER_FLAG_PATH_REQUIRED)
-		&& (!isset($object->type) || strtolower($object->type) != 'link'));
+		&& basename($object->activity_id) == 'tincan.xml');
 	if (($isMetaLink && ($activity = $DB->get_record_select('tcapi_activity', 'metaurl = ?', array($object->activity_id))))
 		|| (isset($object->grouping_id) && ($activity = $DB->get_record_select('tcapi_activity', 'activity_id = ? && grouping_id = ?', array($object->activity_id, $object->grouping_id))))
 		|| (!isset($object->grouping_id) && !isset($object->metaurl) && ($activity = $DB->get_record_select('tcapi_activity', 'activity_id = ?', array($object->activity_id))))
@@ -760,18 +823,24 @@ function local_tcapi_push_actor_properties ($actor, $object) {
 	$actor->familyName = isset($actor->family_name) ? $actor->family_name : null;
 	$actor->firstName = isset($actor->first_name) ? $actor->first_name : null;
 	$actor->lastName = isset($actor->last_name) ? $actor->last_name : null;
-	return local_tcapi_push_object_properties ($actor, $object, array('name','mbox','mbox_sha1sum','openid','account','givenName','familyName','firstName','lastName'), true);
+	return local_tcapi_push_object_properties ($actor, $object, array('name','mbox','mbox_sha1sum','openid','account','givenName','familyName','firstName','lastName'),
+			 array('name','mbox','mbox_sha1sum','openid','account','givenName','familyName','firstName','lastName'));
 }
 
 function local_tcapi_push_activity_properties ($activity, $object) {
 	$activity->interactionType = isset($activity->interaction_type) ? $activity->interaction_type : null;
-	return local_tcapi_push_object_properties ($activity, $object, array('activity_id','metaurl','known','name','description','type','interactionType','extensions','grouping_id'));
+	if (isset($object->definition)) {
+		$object->name = (isset($object->definition->name)) ? $object->definition->name : null;
+		$object->description = (isset($object->definition->description)) ? $object->definition->description : null;
+	}
+	return local_tcapi_push_object_properties ($activity, $object, array('activity_id','metaurl','known','name','description','type','interactionType','extensions','grouping_id'),
+			false, array('name','description'));
 }
 
-function local_tcapi_push_object_properties ($currObject, $pushObject, $propertyKeys, $multipleVals=false) {
+function local_tcapi_push_object_properties ($currObject, $pushObject, $propertyKeys, $multipleVals=false, $isObject=false) {
 	foreach ($propertyKeys as $key) {
 		if (isset($pushObject->$key) && !empty($pushObject->$key)) {
-			if ($multipleVals) {
+			if ($multipleVals !== false && in_array($key, $multipleVals)) {
 				if (isset($currObject->$key) && !is_array($currObject->$key))
 					$currObject->$key = unserialize($currObject->$key);
 				$currValues = (isset($currObject->$key)) ? $currObject->$key : array();
@@ -784,6 +853,15 @@ function local_tcapi_push_object_properties ($currObject, $pushObject, $property
 						array_push($newValues, $pushVal);
 				}
 				$currObject->$key = serialize($newValues);				
+			} elseif ($isObject !== false && in_array($key, $isObject)) {
+				if (isset($currObject->$key) && !is_object($currObject->$key))
+					$currValues = unserialize($currObject->$key);
+				else
+					$currValues = new stdClass();
+				$pushVals = (array)$pushObject->$key;
+				foreach ($pushVals as $k=>$v)
+					$currValues->$k = $v;
+				$currObject->$key = json_encode($currValues);
 			} else
 				$currObject->$key = $pushObject->$key;
 		}
