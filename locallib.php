@@ -841,8 +841,15 @@ function local_tcapi_push_object_properties ($currObject, $pushObject, $property
 	foreach ($propertyKeys as $key) {
 		if (isset($pushObject->$key) && !empty($pushObject->$key)) {
 			if ($multipleVals !== false && in_array($key, $multipleVals)) {
-				if (isset($currObject->$key) && !is_array($currObject->$key))
-					$currObject->$key = unserialize($currObject->$key);
+				// decode current object value and ensure it's an array
+				if (isset($currObject->$key) && !is_array($currObject->$key)) {
+					if (!($currObject->$key = unserialize($currObject->$key)) ||
+						!is_array($currObject->$key))
+						$currObject->$key = array($currObject->$key);
+				}
+				// ensure the push object is an array
+				if (!is_array($pushObject->$key))
+					$pushObject->$key = array($pushObject->$key);
 				$currValues = (isset($currObject->$key)) ? $currObject->$key : array();
 				$primaryValue = array_shift($pushObject->$key);
 				if (($pKey = array_search($primaryValue,$currValues)) !== false)
@@ -852,10 +859,13 @@ function local_tcapi_push_object_properties ($currObject, $pushObject, $property
 					if (!in_array($pushVal, $newValues))
 						array_push($newValues, $pushVal);
 				}
-				$currObject->$key = serialize($newValues);				
+				if (!empty($newValues))
+					$currObject->$key = serialize($newValues);
+				else
+					$currObject->$key = null;
 			} elseif ($isObject !== false && in_array($key, $isObject)) {
 				if (isset($currObject->$key) && !is_object($currObject->$key))
-					$currValues = unserialize($currObject->$key);
+					$currValues = json_decode($currObject->$key);
 				else
 					$currValues = new stdClass();
 				$pushVals = (array)$pushObject->$key;

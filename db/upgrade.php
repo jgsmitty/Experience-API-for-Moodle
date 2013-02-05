@@ -42,7 +42,18 @@ function xmldb_local_tcapi_upgrade($oldversion) {
     // Moodle v2.3.0 release upgrade line
     // Put any upgrade step following this
 
-
+    if ($oldversion < 2013020502) {
+    	// Changing nullability of field name on table tcapi_agent to null
+    	$table = new xmldb_table('tcapi_agent');
+    	$field = new xmldb_field('name', XMLDB_TYPE_TEXT, null, null, null, null, null, 'object_type');
+    	
+    	// Launch change of nullability for field name
+    	$dbman->change_field_notnull($table, $field);
+    	
+    	// tcapi savepoint reached
+    	upgrade_plugin_savepoint(true, 2013020502, 'local', 'tcapi');
+    }
+    
     return true;
 }
 
