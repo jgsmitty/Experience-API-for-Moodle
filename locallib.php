@@ -738,9 +738,9 @@ function local_tcapi_get_actor ($actor, $objectType = false) {
 	if (isset($object->localid))
 		array_push($xtrasql, 'localid = '.$USER->id);
 	if (isset($object->mbox_sha1sum) && !empty($object->mbox_sha1sum))
-		array_push($xtrasql, '(mbox_sha1sum LIKE \'%'. implode("'%\' OR mbox_sha1sum LIKE \'%'",$object->mbox_sha1sum) .'%\))');
+		array_push($xtrasql, '(mbox_sha1sum LIKE \'%"'. implode("\"%' OR mbox_sha1sum LIKE '%\"",$object->mbox_sha1sum) .'"%\')');
 	if (isset($object->mbox) && !empty($object->mbox))
-		array_push($xtrasql, '(mbox LIKE \'%'. implode("'%\' OR mbox LIKE \'%'",$object->mbox) .'%\')');
+		array_push($xtrasql, '(mbox LIKE \'%"'. implode("\"%' OR mbox LIKE '%\"",$object->mbox) .'"%\')');
 	if (!empty($xtrasql))
 		$sqlwhere .= ' AND ('.implode(" OR ", $xtrasql).')';
 	if (($actor = $DB->get_record_select('tcapi_agent', $sqlwhere)))
@@ -841,11 +841,12 @@ function local_tcapi_push_object_properties ($currObject, $pushObject, $property
 	foreach ($propertyKeys as $key) {
 		if (isset($pushObject->$key) && !empty($pushObject->$key)) {
 			if ($multipleVals !== false && in_array($key, $multipleVals)) {
-				// decode current object value and ensure it's an array
+				// decode current object value and ensure it's an array, or unset
 				if (isset($currObject->$key) && !is_array($currObject->$key)) {
-					if (!($currObject->$key = unserialize($currObject->$key)) ||
+					$currObject->$key = json_decode($currObject->$key);
+					if (is_null($currObject->$key) ||
 						!is_array($currObject->$key))
-						$currObject->$key = array($currObject->$key);
+						unset($currObject->$key);
 				}
 				// ensure the push object is an array
 				if (!is_array($pushObject->$key))
@@ -859,10 +860,7 @@ function local_tcapi_push_object_properties ($currObject, $pushObject, $property
 					if (!in_array($pushVal, $newValues))
 						array_push($newValues, $pushVal);
 				}
-				if (!empty($newValues))
-					$currObject->$key = serialize($newValues);
-				else
-					$currObject->$key = null;
+				$currObject->$key = (!empty($newValues)) ? json_encode($newValues) : null;
 			} elseif ($isObject !== false && in_array($key, $isObject)) {
 				if (isset($currObject->$key) && !is_object($currObject->$key))
 					$currValues = json_decode($currObject->$key);

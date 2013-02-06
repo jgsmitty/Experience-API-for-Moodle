@@ -54,6 +54,27 @@ function xmldb_local_tcapi_upgrade($oldversion) {
     	upgrade_plugin_savepoint(true, 2013020502, 'local', 'tcapi');
     }
     
+    if ($oldversion < 2013020503) {
+    	// Update tcapi_agent fields to json vs. serialized
+    	$fields = array('name','mbox','mbox_sha1sum','openid','account','given_name','family_name','first_name','last_name');
+    	if ($records = $DB->get_records('tcapi_agent', array('object_type'=>'person'))) {
+    		foreach ($records as $r) {
+    			$update = false;
+    			foreach ($fields as $key) {
+    				if (!empty($r->$key) && ($val = unserialize($r->$key))) {
+    					$r->$key = json_encode($val);
+    					$update = true;
+    				}
+    			}
+    			if ($update)
+    				$DB->update_record('tcapi_agent', $r);
+    		}
+    	}
+    	   	
+    	// tcapi savepoint reached
+    	upgrade_plugin_savepoint(true, 2013020503, 'local', 'tcapi');
+    }
+    
     return true;
 }
 
