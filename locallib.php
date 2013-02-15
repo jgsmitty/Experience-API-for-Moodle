@@ -582,7 +582,7 @@ function local_tcapi_store_statement ($params) {
 			if (isset($statement->result->success))
 				$rData->success = ($statement->result->success == 'true') ? '1' : '0';
 			if (isset($statement->result->completion))
-				$rData->completion = (strtolower($statement->result->completion) == 'completed') ? '1' : '0';
+				$rData->completion = (strtolower($statement->result->completion) == 'completed' || $statement->result->completion == true) ? '1' : '0';
 			if (isset($statement->result->duration)) {
 				if ($tarr = local_tcapi_parse_duration($statement->result->duration))
 					$rData->duration = implode(":",$tarr);
