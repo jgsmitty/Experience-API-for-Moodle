@@ -12,12 +12,11 @@ Installation / Configuration Settings:
 4. Go to the Site Administration -> Plugins -> Web Services -> Overview. You will see the steps to allow external system to control Moodle.
 5. Verify at Step 1 that web services are enabled. If not, click on the link to Enable web services.
 6. Verify at Step 2 that the rest protocol for web services is enabled. If not, click on the link to Enable protocols.
+7. An .htaccess file is provided for the purpose of exposing specific authorization headers to PHP. If you have access on your server to the apache_request_headers function, you should not need this file. 
+8. If you plan to access the LRS externally using Basic Auth methods, you'll need to enable the web service Auth plugin as well.
 
 You Moodle installation should now be set to receive TCAPI statements.
 
 The endpoint for TCAPI is http://moodlesite/local/tcapi/endpoint.php.
-<<<<<<< HEAD
+
 If you're using the modified SCORM module for TIN CAN packages, you should not have to modify any settings beyond the steps above.
-=======
-If you're using the modified SCORM module for TIN CAN packages, you should not have to modify any settings beyond the steps above.
->>>>>>> 7205b03cdd8bc4c0009c85214717c79b9eea584e
